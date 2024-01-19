@@ -11,8 +11,11 @@ router.get('/', (req, res) => {
   .then((response) => {
     res.json(response)
   })
-
 });
+
+router.put('/new', (req, res) => {
+  console.log('##################')
+})
 
 module.exports = router;
 
