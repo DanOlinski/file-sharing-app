@@ -1,0 +1,75 @@
+
+.main {
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.icon1 {
+    height: 30px;
+    display: flex;
+    scale: 0.97;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 120px;
+    padding: 8px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.icon2 {
+    border: 19px;
+    border-radius: 100px;
+    --b: 1.1px;
+    width: 30px;
+    aspect-ratio: 1;
+    background: conic-gradient(from 90deg at var(--b) var(--b), #00000000 90deg, rgba(0, 0, 0, 0.73) 0) calc(100% + var(--b) / 2) calc(100% + var(--b) / 2)/calc(50% + var(--b)) calc(50% + var(--b));
+}
+
+.icon2:hover {
+    animation-name: rotate;
+    animation-duration: 60s;
+
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(0deg);
+        }
+
+        0.4% {
+            transform: rotateZ(90deg);
+        }
+
+        100% {
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+.container {
+    
+    width: 180px;
+    height: 150px;
+    padding: 5px;
+    text-align: center;
+  }
+  .folder_tab, .folder {
+    margin: 0 auto;
+    background-color: #ad9032;
+  }
+  .folder_tab {
+    width: 60px;
+    height: 10px;
+    margin-right: 50%;
+    border-radius: 5px 15px 0 0;
+  }
+  .folder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 70px;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 5px 7px 5px #0000002c;
+    margin-bottom: 10px;
+  }
