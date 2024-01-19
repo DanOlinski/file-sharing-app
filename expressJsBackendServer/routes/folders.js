@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
   })
 });
 
+//this rout is the POST rout to save new folders to the database
 router.put('/new', (req, res) => {
   console.log('##################')
 })
