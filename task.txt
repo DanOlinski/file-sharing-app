@@ -1,0 +1,15 @@
+Hello Daniel,
+
+Thank you for showing interest in our Junior Full-Stack Developer position.
+
+The next step of the hiring process is for you to complete a task at your own pace and your time.
+
+See below for task details, once you have completed please upload the code to Git Hub and share the link.
+
+```
+Build a basic file-sharing app using Next.js, TypeScript and PostgreSQL as a database.
+
+No signup or sign is required, make everything public.
+A user can create folders and upload files to them (store the files in /tmp folder of the server).
+User can put a password on the folder to restrict public access to it.
+User can share access to a locked folder using email.
