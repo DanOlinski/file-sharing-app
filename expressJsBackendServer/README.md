@@ -2,7 +2,7 @@
 This is a ready to use ExpressJs server template with a Postgres database
 
 ## Create the DB
-1. Start postgres with the command `startpostgres` (make sure you have postgres installed in the device chosen to run this app)
+1. Start postgres with the command `sudo -i -u postgres` (make sure you have postgres installed in the device chosen to run this app)
 2. Create a database: from your terminal run the command `psql` then `CREATE DATABASE iraj_coding_challenge;`. If you with to use a deferent name for your database go to the file .env and change the database to whatever you like.
 
 ## Setup

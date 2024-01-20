@@ -1,23 +1,19 @@
-import styles from './Forlder.module.css'
+import styles from '../folders/Forlder.module.css'
+import AddIcon from './AddIcon'
+import Form from './Form'
 
+//this renders the folder icon that enables the user to create a new folder
 export default function AddFolder() {
 
   return (
     <>
-
-
-
       <div className={styles.container}>
         <div className={styles.folder_tab}></div>
         <div className={styles.folder}>
-
-          <div className={styles.icon1}>
-          <div className={styles.icon2}>
-          </div>
-          </div>
+          <AddIcon />
+          <Form />
         </div>
       </div>
-
     </>
   )
 }

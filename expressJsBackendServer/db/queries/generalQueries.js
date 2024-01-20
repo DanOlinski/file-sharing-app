@@ -5,7 +5,7 @@ const getAllFolders = () => {
 
   //selecting all columns from users
   const sqlQuery = `
-  SELECT name
+  SELECT name, id
   FROM folders;
   `;
 
