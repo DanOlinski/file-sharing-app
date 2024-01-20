@@ -15,7 +15,14 @@ router.get('/', (req, res) => {
 
 //this rout is the POST rout to save new folders to the database
 router.put('/new', (req, res) => {
-  console.log('##################')
+  generalQueries.saveFolderToDb(res.req.body.postData)
+  .then((resp) => {
+    res.json(resp)
+
+  })
+
+  console.log(res.req.body.postData)
+
 })
 
 module.exports = router;

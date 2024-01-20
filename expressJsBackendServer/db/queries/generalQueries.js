@@ -14,6 +14,20 @@ const getAllFolders = () => {
     .catch((err) => console.log(err.message))//debug in terminal
 };
 
+const saveFolderToDb = (info) => {
+
+  const values = [info];
+  const sqlQuery = `
+    INSERT INTO folders(name)
+    VALUES ($1);
+  `;
+
+  return db.query(sqlQuery, values)
+      .then(() => "user added to database")
+      .catch((err) => console.log(err.message))//debug in terminal
+};
+
 module.exports = {
+  saveFolderToDb,
   getAllFolders,
 };
